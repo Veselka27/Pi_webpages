@@ -34,7 +34,7 @@
                 font-size: 1em;
                 cursor: pointer;
             }
-            .fourh {
+            .four {
                 display: inline-block;
                 padding: 1em;
                 border: none;
@@ -44,13 +44,29 @@
                 font-size: 1em;
                 cursor: pointer;
             }
+            .fourhimg {
+                max-width: 50%;
+                float: left;
+                height: auto;
+                margin-right: 1em;
+            }
+            .specs {
+                text-align: left;
+                margin-bottom: 1em;
+            }
+            .specs h3 {
+                margin-top: 0;
+            }
+            .buttons-container {
+                margin-right: 13em;
+            }
             .zero:hover {
                 background-color: #309333;
             }
             .pico:hover {
                 background-color: #e52c1f;
             }
-            .fourh:hover {
+            .four:hover {
                 background-color:  #ed9b18
             }
         </style>
@@ -58,10 +74,31 @@
     <body>
         <h1>Raspberry Pi 400</h1>
         <div>
-            <button class="zero" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/zero.html'">Raspberry Pi Zero</button>
-            <button class="pico" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/pico.html'">Raspberry Pi Pico</button>
-            <button class="fourh" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/four.html'">Raspberry Pi 4</button>
+            <img class="fourhimg"src="https://th.bing.com/th/id/R.a7edb428d00cb0622325ab207689234e?rik=kiM3g764hPOKRg&pid=ImgRaw&r=0">
+            <div class="specs">
+                <h3>Specifications:</h3>
+                <ul>
+                    <li>Broadcom BCM2711 quad-core Cortex-A72 (ARM v8) 64-bit SoC @</li>
+                    <li>4GB LPDDR4-3200</li>
+                    <li>Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN</li>
+                    <li>Bluetooth 5.0, BLE</li>
+                    <li>Gigabit Ethernet</li>
+                    <li>2 × USB 3.0 and 1 × USB 2.0 ports</li>
+                    <li>Horizontal 40-pin GPIO header</li>
+                    <li>2 × micro HDMI ports (supports up to 4Kp60)</li>
+                    <li>H.265 (4Kp60 decode); H.264 (1080p60 decode, 1080p30 encode); OpenGL ES 3.1, Vulkan 1.0</li>
+                    <li>MicroSD card slot for operating system and data storage</li>
+                    <li>78- or 79-key compact keyboard (depending on regional variant)</li>
+                    <li>5V DC via USB connector</li>
+                    <li>Operating temperature: 0°C to +50°C ambient</li>
+                    <li>Maximum dimensions 286 mm × 122 mm × 23 mm</li>
+                </ul>
+            </div>
+            <div class="buttons-container">
+                <button class="zero" onclick="location.href='zero.html'">Raspberry Pi Zero</button>
+                <button class="pico" onclick="location.href='pico.html'">Raspberry Pi Pico</button>
+                <button class="four" onclick="location.href='four.html'">Raspberry Pi 4</button>
+            </div>
         </div>
-        <br>
     </body>
 </html>

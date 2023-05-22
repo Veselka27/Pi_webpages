@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Raspberry Pi Zero</title>
-        <style>
-            body {
-                text-align: center;
-                background-color: #F0F2F5;
-                font-family: Arial, sans-serif;
-                font-size: 16px;
-                line-height: 1.5;
-                padding: 1em;
-            }
-            h1 {
-                margin-top: 0;
-            }
-            .pico {
-                display: inline-block;
-                padding: 1em;
-                border: none;
-                border-radius: 5px;
-                background-color: #4CAF50;
-                color: #FFFFFF;
-                font-size: 1em;
-                cursor: pointer;
-            }
-            .four {
-                display: inline-block;
-                padding: 1em;
-                border: none;
-                border-radius: 5px;
-                background-color: #F44336;
-                color: #FFFFFF;
-                font-size: 1em;
-                cursor: pointer;
-            }
-            .fourh {
-                display: inline-block;
-                padding: 1em;
-                border: none;
-                border-radius: 5px;
-                background-color: #edb118;
-                color: #FFFFFF;
-                font-size: 1em;
-                cursor: pointer;
-            }
-            .pico:hover {
-                background-color: #309333;
-            }
-            .four:hover {
-                background-color: #e52c1f;
-            }
-            .fourh:hover {
-                background-color:  #ed9b18
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Raspberry Pi Zero</h1>
-        <img src="https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp" alt="">
-        <div>
-            <button class="pico" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/pico.html'">Raspberry Pi Pico</button>
-            <button class="four" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/four.html'">Raspberry Pi 4</button>
-            <button class="fourh" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/fourh.html'">Raspberry Pi 400</button>
+<head>
+    <title>Raspberry Pi Zero</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #F0F2F5;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 1em;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .buttons-container {
+            text-align: left;
+            margin-bottom: 1em;
+        }
+        .pico, .four, .fourh {
+            display: inline-block;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 1em;
+        }
+        .pico {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+        }
+        .four {
+            background-color: #F44336;
+            color: #FFFFFF;
+        }
+        .fourh {
+            background-color: #edb118;
+            color: #FFFFFF;
+        }
+        .pico:hover {
+            background-color: #309333;
+        }
+        .four:hover {
+            background-color: #e52c1f;
+        }
+        .fourh:hover {
+            background-color: #ed9b18;
+        }
+        .zeroimg {
+            max-width: 50%;
+            height: auto;
+            float: left;
+            margin-right: 1em;
+        }
+        .specs {
+            text-align: left;
+            margin-bottom: 1em;
+        }
+        .specs h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Raspberry Pi Zero</h1>
+    <div>
+        <img class="zeroimg" src="https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp">
+        <div class="specs">
+            <h3>Specifications:</h3>
+            <ul>
+                <li>1GHz quad-core 64-bit Arm Cortex-A53 CPU</li>
+                <li>512MB SDRAM</li>
+                <li>2.4GHz 802.11 b/g/n wireless LAN</li>
+                <li>Bluetooth 4.2, Bluetooth Low Energy (BLE), onboard antenna</li>
+                <li>Mini HDMI port and micro USB On-The-Go (OTG) port</li>
+                <li>microSD card slot</li>
+                <li>CSI-2 camera connector</li>
+                <li>HAT-compatible 40-pin header footprint (unpopulated)</li>
+                <li>H.264, MPEG-4 decode (1080p30); H.264 encode (1080p30)</li>
+                <li>OpenGL ES 1.1, 2.0 graphics</li>
+                <li>Micro USB power</li>
+                <li>Composite video and reset pins via solder test points</li>
+                <li>65mm x 30mm</li>
+            </ul>
         </div>
-        <br>
-    </body>
-</html>
+    </div>
+    <div class="buttons-container">
+        <button class="pico" onclick="location.href='pico.html'">Raspberry Pi Pico</button>
+        <button class="four" onclick="location.href='four.html'">Raspberry Pi 4</button>
+        <button class="fourh" onclick="location.href='fourh.html'">Raspberry Pi 400</button>
+    </div>
+</body>
