@@ -44,6 +44,22 @@
                 font-size: 1em;
                 cursor: pointer;
             }
+            .fourimg {
+                max-width: 50%;
+                height: auto;
+                float: left;
+                margin-right: 1em
+            }
+            .specs {
+                text-align: left;
+                margin-top: 2em;
+            }
+            .specs h3 {
+                margin-top: 0;
+            }
+            .button-container {
+                margin-left: 32em;
+            }
             .zero:hover {
                 background-color: #309333;
             }
@@ -58,10 +74,33 @@
     <body>
         <h1>Raspberry Pi 4</h1>
         <div>
-            <button class="zero" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/zero.html'">Raspberry Pi Zero</button>
-            <button class="pico" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/pico.html'">Raspberry Pi Pico</button>
-            <button class="fourh" onclick="location.href='P:/Zeinert/4A2/Vesel%C3%BD%20Filip/HTML/fourh.html'">Raspberry Pi 400</button>
+            <img class="fourimg" src="https://th.bing.com/th/id/R.edbd95223c0953caf3094b4ef1bb63d2?rik=ZKDxcraRY7v8NA&pid=ImgRaw&r=0">
+            <div class="specs">
+                <h3>Specifications:</h3>
+                <ul>
+                    <li>Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.8GHz</li>
+                    <li>1GB, 2GB, 4GB or 8GB LPDDR4-3200 SDRAM (depending on model)</li>
+                    <li>2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE</li>
+                    <li>Gigabit Ethernet</li>
+                    <li>2 USB 3.0 ports; 2 USB 2.0 ports.</li>
+                    <li>Raspberry Pi standard 40 pin GPIO header (fully backwards compatible with previous boards)</li>
+                    <li>2 × micro-HDMI ports (up to 4kp60 supported)</li>
+                    <li>2-lane MIPI DSI display port</li>
+                    <li>2-lane MIPI CSI camera port</li>
+                    <li>4-pole stereo audio and composite video port</li>
+                    <li>H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)</li>
+                    <li>OpenGL ES 3.1, Vulkan 1.0</li>
+                    <li>Micro-SD card slot for loading operating system and data storage</li>
+                    <li>5V DC via USB-C connector (minimum 3A*)</li>
+                    <li>5V DC via GPIO header (minimum 3A*)</li>
+                    <li>Power over Ethernet (PoE) enabled (requires separate PoE HAT)</li>
+                    <li>Operating temperature: 0 – 50 degrees C ambient</li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button class="zero" onclick="location.href='zero.html'">Raspberry Pi Zero</button>
+                <button class="pico" onclick="location.href='pico.html'">Raspberry Pi Pico</button>
+                <button class="fourh" onclick="location.href='fourh.html'">Raspberry Pi 400</button>
+            </div>
         </div>
-        <br>
     </body>
-</html>
