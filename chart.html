@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Raspberry Pi Stock Chart</title>
+    <title>Raspberry Pi</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
        body {
@@ -60,15 +60,16 @@
     </style>
 </head>
 <body>
-    <h1>Raspberry Pi Stock Chart</h1>
+    <h1>Počet prodaných jednotek Raspberry Pi</h1>
     <canvas id="stockChart"></canvas>
     <script>
         // Sample data for demonstration
         const stockData = [
-            { date: '2023-01-01', price: 120 },
-            { date: '2023-01-02', price: 125 },
-            { date: '2023-01-03', price: 130 },
-            { date: '2023-01-04', price: 170}
+            { date: '2013', price: 700000 },
+            { date: '2014', price: 4000000 },
+            { date: '2016', price: 10000000 },
+            { date: '2017', price: 14000000},
+            { date: '2023', price: 30000000}
             // Add more data points here...
         ];
 
@@ -83,7 +84,7 @@
             data: {
                 labels: dates,
                 datasets: [{
-                    label: 'Raspberry Pi Stock',
+                    label: 'Raspberry Pi',
                     data: prices,
                     backgroundColor: 'rgba(52, 152, 219, 0.5)',
                     borderColor: 'rgba(52, 152, 219, 1)',
@@ -106,7 +107,7 @@
                         display: true,
                         title: {
                             display: true,
-                            text: 'Cena'
+                            text: 'Rok'
                         }
                     }
                 }
