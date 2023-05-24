@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raspberry Pi Pico</title>
+    <link rel="icon" type="image/x-icon" href="obrazky/logo.ico">
+    <style>
+        body {
+            text-align: center;
+            background-color: #F0F2F5;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 1em;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .chart {
+            display: inline-block;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #565656;
+            color: #FFFFFF;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .picoimg {
+            max-width: 50%;
+            height: auto;
+            float: left;
+            margin-right: 1em;
+        }
+        .button-container {
+            margin-left: 35em;
+        }
+        .chart:hover {
+            background-color: #474a48;
+        }
+        .specs {
+            text-align: left;
+            margin-top: 2em;
+        }
+        .specs h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Raspberry Pi Pico</h1>
+    <a href="https://www.raspberrypi.com/products/raspberry-pi-pico/" target="_blank">
+        <img class="picoimg" src="obrazky/pico.png">
+    </a>
+    <div class="specs">
+        <h3>Specifikace:</h3>
+        <ul>
+            <li>21 mm × 51 mm form factor</li>
+            <li>RP2040 microcontroller chip designed by Raspberry Pi in the UK</li>
+            <li>Dual-core Arm Cortex-M0+ processor, flexible clock running up to 133 MHz</li>
+            <li>264kB on-chip SRAM</li>
+            <li>2MB on-board QSPI flash</li>
+            <li>2.4GHz 802.11n wireless LAN (Raspberry Pi Pico W and WH only)</li>
+            <li>26 multifunction GPIO pins, including 3 analogue inputs</li>
+            <li>2 × UART, 2 × SPI controllers, 2 × I2C controllers, 16 × PWM channels</li>
+            <li>1 × USB 1.1 controller and PHY, with host and device support</li>
+            <li>8 × Programmable I/O (PIO) state machines for custom peripheral support</li>
+            <li>Supported input voltage 1.8–5.5V DC</li>
+            <li>Operating temperature -20°C to +85°C (Raspberry Pi Pico and Pico H); -20°C to +70°C (Raspberry Pi Pico W and Pico WH)</li>
+            <li>Castellated module allows soldering direct to carrier boards (Raspberry Pi Pico and Pico W only)</li>
+            <li>Drag-and-drop programming using mass storage over USB</li>
+            <li>Low-power sleep and dormant modes</li>
+            <li>Accurate on-chip clock</li>
+            <li>Temperature sensor</li>
+            <li>Accelerated integer and floating-point libraries on-chip</li>
+        </ul>
+    </div>
+    <div class="button-container">
+        <button class="chart" onclick="location.href='index.html'">Zpátky na tabulku</button>
+    </div>
+    <br>
+</body>
