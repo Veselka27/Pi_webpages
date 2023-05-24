@@ -15,6 +15,10 @@
         h1 {
             margin-top: 0;
         }
+        a {
+            color: #2a9d8f;
+            text-decoration: none;
+        }
         .chart {
             display: inline-block;
             padding: 1em;
@@ -37,6 +41,9 @@
         .chart:hover {
             background-color: #474a48;
         }
+        a:hover {
+            color: #264653;
+        }
         .specs {
             text-align: left;
             margin-top: 2em;
@@ -55,13 +62,13 @@
         <h3>Specifikace:</h3>
         <ul>
             <li>21 mm × 51 mm form factor</li>
-            <li>RP2040 microcontroller chip designed by Raspberry Pi in the UK</li>
-            <li>Dual-core Arm Cortex-M0+ processor, flexible clock running up to 133 MHz</li>
-            <li>264kB on-chip SRAM</li>
+            <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html" target="_blank">RP2040</a> microcontroller chip designed by Raspberry Pi in the UK</li>
+            <li>Dual-core <a href="https://en.wikipedia.org/wiki/ARM_Cortex-M#Cortex-M0+" target="_blank">Arm Cortex-M0+</a> processor, flexible clock running up to 133 MHz</li>
+            <li>264kB on-chip <a href="https://en.wikipedia.org/wiki/Static_random-access_memory" target="_blank">SRAM</a></li>
             <li>2MB on-board QSPI flash</li>
             <li>2.4GHz 802.11n wireless LAN (Raspberry Pi Pico W and WH only)</li>
             <li>26 multifunction GPIO pins, including 3 analogue inputs</li>
-            <li>2 × UART, 2 × SPI controllers, 2 × I2C controllers, 16 × PWM channels</li>
+            <li>2 × <a href="https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter" target="_blank">UART</a> 2 × <a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface" target="_blank">SPI</a> controllers, 2 × <a href="https://en.wikipedia.org/wiki/I%C2%B2C" target="_blank">I2C</a> controllers, 16 × <a href="https://en.wikipedia.org/wiki/Pulse-width_modulation" target="_blank">PWM</a> channels</li>
             <li>1 × USB 1.1 controller and PHY, with host and device support</li>
             <li>8 × Programmable I/O (PIO) state machines for custom peripheral support</li>
             <li>Supported input voltage 1.8–5.5V DC</li>
